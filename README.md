@@ -23,15 +23,15 @@
 
 ## Live Demo 🌐
 
-### [Expense Tracker App Link]()
+### [Discord clone App Link]()
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-`git clone git@github.com:Bondok6/Expense-tracker-app.git`
+`git clone https://github.com/Reem-lab/discord-clone.git`
 
-Then `cd Expense-tracker-app`
+Then `cd discord-clone`
 
 Then `npm install` to install packages
 
