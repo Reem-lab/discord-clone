@@ -49,7 +49,7 @@ const Chat = () => {
 
       <div className='chat__messages'>
         {
-           messages.map((message) => (
+           messages.reverse().map((message) => (
             <Message
               key={message.id}
               timestampe={message.timestampe}
