@@ -1,3 +1,4 @@
 .app {
   display: flex;
+  /* transition: filter 0ms ease-in-out 300ms; */
 }

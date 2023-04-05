@@ -87,3 +87,119 @@
 .sidebar__profileIcons > .MuiSvgIcon-root {
   padding: 10px;
 }
+
+.modal {
+  width: 300px;
+  height: 300px;
+  left: 50%;
+  top: -100%;
+  margin-bottom: -405px;
+  background-color: #2f3135;
+  padding: 20px;
+  border-radius: 6px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  box-shadow: 0px 2px 5px 5px rgba(0, 0 ,0 ,0.1);
+  margin-top: -25PX;
+  transition: 
+  top 0ms ease-in-out 300ms,
+   opacity 300ms ease-in-out,
+   margin-top 300ms ease-in-out;
+}
+
+body.active-modal {
+  overflow: hidden;
+}
+/* 
+body.active-modal .app {
+  filter: blur(5px);
+  background: rgba(0,0,0,0.08);
+  transition: filter 0ms ease-in-out 0ms;
+} */
+
+body.active-modal .modal {
+  opacity: 1;
+  margin-top: 0px;
+  top: 50%;
+  transition: 
+  top 0ms ease-in-out 0ms,
+   opacity 300ms ease-in-out,
+   margin-top 300ms ease-in-out;
+}
+
+
+
+.modal__header {
+display: flex;
+gap: 20px;
+}
+
+.modal__header > h3 {
+  color: gray;
+}
+
+.close__Button {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: gray;
+  position: relative;
+  left: 60px;
+}
+
+.close__Button:hover {
+  color: #fff;
+}
+
+.input__label {
+  height: 11px;
+  padding: 8px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #2f3135;
+  background-color: gray;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.input__label::placeholder {
+  color: #2f3135;
+}
+
+.form {
+  padding: 12px;
+}
+
+.channel__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.channel__privacy {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.label__text {
+  color: gray;
+  font-weight: 500;
+}
+
+.button__addChannel {
+  background-color: gray;
+  color: #2f3135;
+  padding: 8px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #2f3135;
+  cursor: pointer;
+}
+
+.button__addChannel:hover {
+  background-color: #97989a;
+}
